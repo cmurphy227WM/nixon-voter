@@ -1,0 +1,11 @@
+a {
+    cursor: url('happy_nixon.png'), pointer;
+}
+#mad {
+    cursor: url('https://files.slack.com/files-pri/TSJ4J3C2H-F01T4361K3P/image.png'), pointer;
+}
+
+#blake {
+    font-size: 0.01em;
+    cursor: url('https://files.slack.com/files-pri/TSJ4J3C2H-F01T4361K3P/image.png'), pointer;
+}
