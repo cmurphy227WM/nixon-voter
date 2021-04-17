@@ -1,11 +1,88 @@
-a {
+#nixon {
     cursor: url('happy_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    margin: 1%;
+    padding: 2%;
+    vertical-align: middle;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #C4B0A9 outset 15px;
+    width: 15%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    display: inline-block;
 }
-#mad {
-    cursor: url('https://files.slack.com/files-pri/TSJ4J3C2H-F01T4361K3P/image.png'), pointer;
+
+#nixon:hover {
+    color: #FFCC57;
+    margin: 1%;
+    padding: 2%;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #FFCC57 outset 15px;
+    width: 15%;
+    font-family: Patrick Hand;
+    font-size: 1.5em;
+    transition: 0.3s;
+    transform: scale(1.2);
+    margin-bottom: 5%;
+}
+
+#other {
+    cursor: url('mad_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    margin: 1%;
+    padding: 3%;
+    vertical-align: middle;
+    background-color: rgba(255, 0, 0, 0.712);
+    border-radius: 15%;
+    border: #C4B0A9 inset 15px;
+    width: 15%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    display: inline-block;
+    padding-bottom: 70px;
+}
+
+#other:hover {
+    color: white;
+    margin: 1%;
+    padding: 3%;
+    vertical-align: middle;
+    background-color: grey;
+    border-radius: 15%;
+    border: rgb(97, 74, 0) inset 15px;
+    width: 15%;
+    font-family: Patrick Hand;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    transform: scale(0.8);
+    padding-bottom: 70px;
 }
 
 #blake {
     font-size: 0.01em;
     cursor: url('https://files.slack.com/files-pri/TSJ4J3C2H-F01T4361K3P/image.png'), pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+#container {
+    text-align: center;
+}
+
+html {
+    background: rgb(105,155,200);
+    background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
 }
