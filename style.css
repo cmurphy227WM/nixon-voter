@@ -67,11 +67,12 @@
 
 #blake {
     font-size: 0.01em;
-    cursor: url('https://files.slack.com/files-pri/TSJ4J3C2H-F01T4361K3P/image.png'), pointer;
+    cursor: url('blake.png'), pointer;
 }
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 h5 {
@@ -85,4 +86,24 @@ h5 {
 html {
     background: rgb(105,155,200);
     background: radial-gradient(ellipse at top left, rgba(105,155,200,1) 0%,rgba(181,197,216,1) 57%);
+}
+
+#other a {
+    text-decoration: none;
+    color: white;
+}
+
+#other a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#nixon a {
+    text-decoration: none;
+    color: white;
+}
+
+#nixon a:visited {
+    text-decoration: none;
+    color: white;
 }

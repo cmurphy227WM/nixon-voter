@@ -1,0 +1,97 @@
+@font-face{
+    font-family: sans;
+    src:url(DTM-Mono.otf) format('truetype'),
+    url(sans-undertale.woff2) format('woff2'),
+    url(sans-undertale.woff) format('woff');
+}
+@font-face{
+    font-family: spare;
+    src:url(mercy_font__the_undertale_font_for_battle_buttons__by_maxigamer_d9rqge0/MERCY.ttf) format('truetype'),
+    url(mercy_font__the_undertale_font_for_battle_buttons__by_maxigamer_d9rqge0/MERCY.otf) format('otf');
+}
+html{
+    background: black;
+    font-family: sans;
+    font-size: 1.5em;
+}
+article{
+    grid-template-columns: 1.5fr 1fr;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+section#side{
+    background-color: black;
+    border: 5px solid white;
+    width: 100%;
+    clear: both;
+}
+article img{
+    display: block;
+    width: 30%;
+    padding-left: 35%;
+}
+section#side p{
+    color: white;
+    font-size: 35px;
+    padding-left: 10px;
+}
+#backImg{
+    background-size: cover;
+    padding-right: 20%;
+}
+a:link{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-shadow: #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px,  #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px, #FFCC57 0px 0px 5px,  #FFCC57 0px 0px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    color: yellow;
+    cursor: pointer;
+}
+a:active{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+section#buttons{
+    text-align: center;
+    padding-top: 25px;
+}
+button{
+    color: #ff7f27;
+    margin: 1%;
+    padding: 2%;
+    background-color: black;
+    border: 5px solid #ff7f27;
+    width: 20%;
+    font-family: spare;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+}
+button:hover{
+    color: white;
+    margin: 1%;
+    padding: 2%;
+    color: yellow;
+    background-color: black;
+    border: 5px solid yellow;
+    width: 20%;
+    font-family: spare;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+#background{
+    clear: right;
+}
