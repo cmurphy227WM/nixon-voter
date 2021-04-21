@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="sansational.css" rel="stylesheet">
+    <link id="theme "href="sansational.css" rel="stylesheet">
+    <script src="voting.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,16 +16,16 @@
         </section>
         <section id="side">
             <div id="about">
-                <p>* You feel like you're going to have a sansational time.</p>    
+                <p id="dialogue">* You feel like you're going to have a sansational time.</p>    
             </div>
             
         </section>
     </article>
     <section id="buttons">
-            <button type="button"># FIGHT</button>
-            <button type="button">$ ACT</button>
-            <button type="button">% ITEM</button>
-            <button type="button">& SPARE</button>
+            <button id="fight" type="button" onclick="sansChange4()"># FIGHT</button>
+            <button id="act" type="button" onclick="sansChange3()">$ ACT</button>
+            <button id="item" type="button" onclick="sansChange2()">% ITEM</button>
+            <button id="spare" type="button" onclick="sansChange1()">& MERCY</button>
     </section>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Nixon Voter</title>
+</head>
+<body>
+    <h1>Perhaps you didn't understand the directions.</h1>
+    <h5>VOTE. <br>FOR.<br> NIXON.</h5>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <div id="container">
+        <button type="button" id="nixon2" onclick="followCursor()">Vote for future President Nixon</button>
+        <a href="index4.html"><button type="button" id="other" onclick="sheetchange()">Other Options</button></a>
+    </div>
+    <script type="text/javascript">
+        var nixon2 = document.getElementById("nixon2");
+        document.addEventListener('mousemove', function(e){
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+        })
+    </script>
+    <script type="text/javascript">
+        const height = document.documentElement.clientHeight;
+        const width = document.documentElement.clientWidth;
+        const move = document.getElementById("other");
+
+        move.addEventListener("mouseover", () => {
+            let randY = Math.floor((Math.random() * height) + 1);
+            let randX = Math.floor((Math.random() * width) + 1);
+            move.style.transform = `translate(${randX}px, ${randY}px)`;
+        });
+    </script>
+
+    <br><br><br><br><br>
+    <script src="voting.js"></script>
+</body>
+</html>

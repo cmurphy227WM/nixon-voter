@@ -65,9 +65,10 @@
     padding-bottom: 70px;
 }
 
-#blake {
+#blakebtn {
+    cursor: url("blake.png"), pointer;
     font-size: 0.01em;
-    cursor: url('blake.png'), pointer;
+    text-decoration: none;
 }
 
 h1 {
@@ -106,4 +107,38 @@ html {
 #nixon a:visited {
     text-decoration: none;
     color: white;
+}
+
+#nixon2 {
+    position: fixed;
+    cursor: url('happy_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    margin: 1%;
+    padding: 2%;
+    vertical-align: middle;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #C4B0A9 outset 15px;
+    width: 15%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.1s;
+    display: inline-block;
+    transition: 1s;
+}
+
+#nixon2:hover {
+    color: #FFCC57;
+    margin: 1%;
+    padding: 2%;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #FFCC57 outset 15px;
+    width: 15%;
+    font-family: Patrick Hand;
+    font-size: 1.5em;
+    transition: 0.3s;
+    transform: scale(1.2);
+    margin-bottom: 5%;
 }

@@ -57,3 +57,54 @@ function sheetchange(){
         }
     }
 }
+
+function sansChange1() {
+    document.getElementById('spare').onclick = function btnChange() {
+        document.getElementById('dialogue').innerHTML = '<a href="index2.html">Spare</a>';
+}
+}
+function sansChange2() {
+    document.getElementById('item').onclick = function btnChange() {
+        document.getElementById('dialogue').innerHTML = '<a href="index2.html">Voting Ticket</a>';
+}
+}
+function sansChange3() {
+    document.getElementById('act').onclick = function btnChange() {
+        document.getElementById('dialogue').innerHTML = '<a href="index2.html">Vote</a>';
+}
+}
+function sansChange4() {
+    document.getElementById('fight').onclick = function btnChange() {
+        document.getElementById('dialogue').innerHTML = '<a href="index2.html">Sans</a>';
+}
+}
+
+let face = document.querySelector('#nixon2');
+document.addEventListener('mousemove', logKey);
+function logKey(e) {
+    face.style.top = `${e.clientY}px`;
+    face.style.left = `${e.clientX}px`;
+    face.style.transform = "translate(-50%, -50%)";
+}
+
+
+
+var r_text = new Array ();
+r_text[0] = "Not Nixon";
+r_text[1] = "Blatantly Correct Choice";
+r_text[2] = "Good President";
+r_text[3] = "Vote Nixon!";
+r_text[4] = "A Good Choice";
+r_text[5] = "Nixon for President";
+r_text[6] = "We All Love Nixon!";
+r_text[7] = "Support Nixon";
+r_text[8] = "4 Years of Nixon";
+r_text[9] = "Endorse Nixon";
+r_text[10] = "History's Greatest Leader";
+
+var i = Math.floor(r_text.length * Math.random());
+var intervalId = window.setInterval(function(){
+        var i = Math.floor(r_text.length * Math.random());
+        document.getElementById("nixon3").innerHTML = "<a type='button' id='nixon'>" + r_text[i] + "</button>";
+  }, 2000);
+document.getElementById("nixon3").innerHTML = "<button type='button' id='nixon'>" + r_text[i] + "</button>";

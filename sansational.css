@@ -23,6 +23,7 @@ section#side{
     background-color: black;
     border: 5px solid white;
     width: 100%;
+    padding-bottom: 5%;
     clear: both;
 }
 article img{
@@ -78,7 +79,6 @@ button{
     width: 20%;
     font-family: spare;
     font-size: 1.5em;
-    margin-bottom: 5%;
 }
 button:hover{
     color: white;
