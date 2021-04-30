@@ -1,0 +1,9 @@
+html {
+    background-color: black;
+}
+
+#blake {
+    margin-left: 50%;
+    margin-top: 25%;
+    transform: scale(5);
+}

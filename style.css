@@ -142,3 +142,106 @@ html {
     transform: scale(1.2);
     margin-bottom: 5%;
 }
+
+
+
+#container1 {
+    margin-left: 39%;
+    text-align: center;
+    cursor: url('happy_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    padding: 2%;
+    vertical-align: middle;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #C4B0A9 outset 15px;
+    width: 15%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+#container1:hover {
+    text-align: center;
+    color: #FFCC57;
+    margin-left: 39%;
+    padding: 2%;
+    background-color: rgb(2, 179, 2);
+    border-radius: 15%;
+    border: #FFCC57 outset 15px;
+    width: 15%;
+    font-family: Patrick Hand;
+    font-size: 1.5em;
+    transition: 0.3s;
+    transform: scale(1.2);
+    margin-bottom: 5%;
+}
+
+#nixon3 {
+    text-align: center;
+    cursor: url('happy_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    background-color: rgb(2, 179, 2);
+    border: none;
+    font-size: 1.2em;
+}
+
+#nixon4 {
+    text-align: center;
+    cursor: url('mad_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    background-color: red;
+    border: none;
+    font-size: 1.2em;
+}
+
+
+#container2 {
+    text-align: center;
+    cursor: url('mad_nixon.png'), pointer;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    margin-left: 39%;
+    padding: 2%;
+    vertical-align: middle;
+    background-color: red;
+    border-radius: 15%;
+    border: #C4B0A9 inset 15px;
+    width: 15%;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+#container2:hover {
+    color: white;
+    margin-left: 39%;
+    padding: 3%;
+    vertical-align: middle;
+    border-radius: 15%;
+    border: rgb(97, 74, 0) inset 15px;
+    width: 15%;
+    font-family: Patrick Hand;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+    transition: 0.3s;
+    transform: scale(0.8);
+}
+
+#containertext {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#rigged {
+    transform: scale(2)
+}
+
+h4 {
+    text-align: center;
+}

@@ -50,10 +50,9 @@ function sheetchange(){
             document.getElementById('other').innerHTML = "I'm going to have to use my special attack."
         }
         else if (clickcount == 15) {
-            document.getElementById('other').innerHTML = "<a href='sans.html'>Get ready...</a>";
+            document.getElementById('other').style.color = "lightblue";
+            document.getElementById('other').innerHTML = "<a id='sanslink' href='sans.html'>Get ready...</a>";
             document.getElementById('nixon').innerHTML = "<a href='gaster.html'>Vote for future President Nixon</a>";
-        }
-        else if (clickcount == 16) {
         }
     }
 }
@@ -102,9 +101,70 @@ r_text[8] = "4 Years of Nixon";
 r_text[9] = "Endorse Nixon";
 r_text[10] = "History's Greatest Leader";
 
+let changeBtn = document.getElementById("nixon3");
 var i = Math.floor(r_text.length * Math.random());
 var intervalId = window.setInterval(function(){
         var i = Math.floor(r_text.length * Math.random());
-        document.getElementById("nixon3").innerHTML = "<a type='button' id='nixon'>" + r_text[i] + "</button>";
-  }, 2000);
-document.getElementById("nixon3").innerHTML = "<button type='button' id='nixon'>" + r_text[i] + "</button>";
+        document.querySelector("#nixon3, #nixon4").innerHTML = r_text[i];
+        if (i == 0) {
+            document.getElementById("container1").setAttribute("id", "container2");
+            document.getElementById("nixon3").setAttribute("id", "nixon4");
+            document.getElementById("submitlink").href = "index5.html";
+        } else {
+    document.getElementById("container2").setAttribute("id", "container1");
+    document.getElementById("nixon4").setAttribute("id", "nixon3");
+    document.getElementById("submitlink").href = "blake.html";
+    }
+}, 2000);
+
+
+
+    // let inputField = document.getElementById("rigged");
+    // document.addEventListener("keydown", function changeText(e) {
+    //     if (e.code == "KeyN" && (document.getElementById("rigged").hasAttribute("value") == false)) {
+    //         document.getElementById("rigged").value = 'N';
+    //         console.log("N was pressed");
+    //     }
+    //     else if (e.code == "KeyI" && (document.getElementById("rigged").value = "N")) {
+    //         document.getElementById("rigged").value = 'Ni';
+    //         console.log("I was pressed");
+    //     }
+    //     else if (e.code == "KeyX" && (document.getElementById("rigged").value = "Ni")) {
+    //         document.getElementById("rigged").value = 'Nix';
+    //         console.log("X was pressed");
+    //     }
+    //     else if (e.code == "KeyO" && (document.getElementById("rigged").value = "Nix")) {
+    //         document.getElementById("rigged").value = 'Nixo';
+    //         console.log("O was pressed");
+    //     }
+    //     else if (e.code == "KeyN" && (document.getElementById("rigged").value = "Nixo")) {
+    //         document.getElementById("rigged").value = 'Nixon';
+    //         console.log("N was pressed again");
+    //     }
+    // })
+
+    let typecount = 0;
+    document.onkeydown = function typechange() {
+
+        typecount++;
+        if (typecount == 1) {
+            document.getElementById('rigged').value = 'N';
+        }
+        if (typecount == 2) {
+            document.getElementById('rigged').value = 'Ni';
+        }
+        if (typecount == 3) {
+            document.getElementById('rigged').value = 'Nix';
+        }
+        if (typecount == 4) {
+            document.getElementById('rigged').value = 'Nixo';
+        }
+        if (typecount == 5) {
+            document.getElementById('rigged').value = 'Nixon';
+            window.location.replace("blake.html")
+        }
+    }
+
+function submitButton() {
+    window.location.replace("blake.html")
+}
